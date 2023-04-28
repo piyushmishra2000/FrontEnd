@@ -1,0 +1,20 @@
+<div class="wrapper">
+
+    <div class="block">
+
+        <form [formGroup]="login">
+            <h2>Login</h2>
+            <input type="text" placeholder="Enter Your Name" class="imp" formControlName="name"/>
+            <input type="text" placeholder="Enter your Email" class="imp" formControlname="email"/>
+
+            <div class="btns">
+                <button (click)="loginSubmit(login.value)" [disabled]="login.ivalid" style="height: 25px;">Login</button>
+                <button (click)="goToSignup()">SignUp</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+</div>
